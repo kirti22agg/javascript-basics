@@ -1,22 +1,27 @@
-// assignment operators
+// comparison operators
+const a=21
+const b=7
+const c=21
+console.log(a>b)
+console.log(a<b)
+console.log(a==b)
+console.log(a==c)
+console.log(a>=c)
 
-let a=19
-a+=9 
-// a= a+9
-console.log(a)
+console.log('-------------------------------')
 
-// let Name="Kirti"
-// a+=Name
-// console.log(a)
+const e=11
+const d='11'
 
-a*=5
-console.log(a)
+console.log(e==d)
+console.log(e===d)
 
-a/=7
-console.log(a)
+const x='kirti'
+const y='KIRTI'
+console.log(x==y)
 
-a**=2
-console.log(a)
+
+
 
 
 
