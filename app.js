@@ -1,11 +1,22 @@
-// arithmetic operators
-const a=10
-const b=6
+// assignment operators
 
-console.log(a+b)
-console.log(a-b)
-console.log(a*b)
-console.log(a/b)
-console.log(a**b)
-console.log(b%a)
+let a=19
+a+=9 
+// a= a+9
+console.log(a)
+
+// let Name="Kirti"
+// a+=Name
+// console.log(a)
+
+a*=5
+console.log(a)
+
+a/=7
+console.log(a)
+
+a**=2
+console.log(a)
+
+
 
