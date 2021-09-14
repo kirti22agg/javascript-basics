@@ -1,20 +1,11 @@
-// conditional statements
+// const element = document.getElementById('selectme')
 
-// check whether the number is odd or even
+// const element=document.getElementsByClassName('heading')
 
-const a=0
-if(typeof a==="number"){
-    if(a===0){
-        console.log("number is neither odd nor even")
-    }
-    else if(a%2===0) {
-        console.log("number is even")
-    }
-    else {
-        console.log("number is odd")
-    }
-} else {
-    console.error("not a number")
-}
- 
+// const element = document.getElementsByTagName('div')
 
+const element = document.querySelector('div#selectme')
+
+// const element = document.querySelectorAll('.heading')
+
+console.log(element)
