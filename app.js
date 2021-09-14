@@ -1,11 +1,17 @@
-// const element = document.getElementById('selectme')
-
-// const element=document.getElementsByClassName('heading')
-
-// const element = document.getElementsByTagName('div')
-
 const element = document.querySelector('div#selectme')
 
-// const element = document.querySelectorAll('.heading')
+// element.innerHTML="this is from js"
+// element.style.color ="cyan"
+// element.style.fontSize = "40px"
+// element.style = 'display:none'
 
-console.log(element)
+// console.log(element.classList)
+// element.classList.add('five')
+// console.log(element.classList)
+// element.classList.remove('two')
+// console.log(element.classList)
+
+const value= element.classList.contains('one')
+console.log(value)
+
+
