@@ -1,22 +1,23 @@
-// data types
-// primitive data types
+// const rock=document.querySelector('#rock')
+// const paper=document.querySelector('#paper')
+// const scissors=document.querySelector('#scissors')
 
-let age= 20;
-let Name='Kirti'
+function logName(Name = "Enter your name"){
+    // console.log("Kirti")
+    console.log(Name)
+}
 
-console.log( Name)
-console.log(age)
+// logName("Kirti")
+logName()
 
-let brand= null
-console.log(brand)
+function nameage(Name="John Doe", age = 18){
+    console.log(Name+ " You are " + age)
+}
+nameage()
 
-let isTrue=true
-let isFalse=false
-console.log(isTrue)
-
-// non primitive data types
-
-let arr=[1,2,3,4,5]
-arr.push(false)
-console.log(arr)
-console.log(typeof arr)
+function add(a=0,b=0){
+    const sum=a+b
+    return sum
+}
+const result =add(12,99)
+console.log(result)
