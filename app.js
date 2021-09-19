@@ -1,23 +1,63 @@
-// const rock=document.querySelector('#rock')
-// const paper=document.querySelector('#paper')
-// const scissors=document.querySelector('#scissors')
+const rock=document.querySelector('#rock')
+const paper=document.querySelector('#paper')
+const scissors=document.querySelector('#scissors')
+const board=document.querySelector('#board')
 
 
-// function declaration
 
-function nameage(Name="John Doe", age = 18){
-    console.log(Name+ " You are " + age)
-}
-// const add= function(a=0,b=0){
-//     return a+b
+//  const handler= (action) => {
+//      console.log("You clicked " + action)
+//  }
+
+
+//  rock.addEventListener('click', () => {
+//     handler('rock')
+//  })
+//  paper.addEventListener('click', () => {
+//      handler('paper')
+//  })
+//  scissors.addEventListener('click', () => {
+//      handler('scissors')
+//  })
+
+
+//  const handler= (event) => {
+    
+//     const action = event.target.id
+//     if (action == 'rock') {
+//         board.innerHTML = "rock crushes scissors"
+//     }else if (action == 'paper') {
+//         board.innerHTML = "paper traps rock"
+//     }else if (action == 'scissors') {
+//         board.innerHTML = "scissors cut paper"
+//     }else {
+//         board.innerHTML = "click something"
+//     }
 // }
+const handler= (event) => {
+const action = event.target.id
+
+switch(action){
+    case "rock":
+        board.innerHTML = "rock crushes scissors"
+        break
+    case "paper" :
+        board.innerHTML = "paper traps rock"
+        break
+    case "scissors":
+        board.innerHTML = "scissors cut paper"
+        break
+    default:
+        board.innerHTML = "click something"
 
 
-const add= (a=0,b=0)=>{
-       return a+b
-    }
+} }
 
-    console.log(add(45,98))
+
+rock.addEventListener('click', handler)
+paper.addEventListener('click',  handler)
+scissors.addEventListener('click', handler)
+
 
 
 
