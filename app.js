@@ -15,3 +15,30 @@ console.log(x)
 console.log(y)
 console.log(z)
 
+// object destructuring
+
+const obj={
+    Name: "Kirti Aggarwal",
+    email: "kirti22agg@gmail.com",
+    age: 20
+}
+
+// console.log(obj.email)
+
+let {Name,email,age,num} = obj
+console.log(email)
+console.log(num)
+
+let person ={
+    firstname: "Kirti",
+    lastname: "Aggarwal",
+    age1: 20
+
+}
+let{firstname,lastname,age1,middlename=""}= person
+console.log(firstname)
+console.log(lastname)
+console.log(age1)
+console.log(middlename)
+
+
