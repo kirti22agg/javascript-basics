@@ -1,22 +1,17 @@
-// data types
-// primitive data types
+console.log ("MERGED CLASS 1")
+// array destructuring
 
-let age= 20;
-let Name='Kirti'
+var arr = [1,2,3,4]
 
-console.log( Name)
-console.log(age)
+var [one,two,three]= arr
+console.log(three)
 
-let brand= null
-console.log(brand)
+function getscores() {
+    return [90,100]
+}
 
-let isTrue=true
-let isFalse=false
-console.log(isTrue)
+let [x,y,z] = getscores()
+console.log(x)
+console.log(y)
+console.log(z)
 
-// non primitive data types
-
-let arr=[1,2,3,4,5]
-arr.push(false)
-console.log(arr)
-console.log(typeof arr)
