@@ -1,32 +1,31 @@
-// arrow functions
+let ranks = [1, 2, 3, 4]
+// const newArr= ranks.map((e)=>e+1)
+// const newArr = ranks.map((e) => { return e + 1 })
+console.log(
+    ranks.map((e, index) => {
+        return (e)
+    })
+)
+console.log(
+    ranks.map((e, index) => {
+         return (index) 
+    })
+)
 
-// function add(x,y){
-    // return x+y
-// }
-// console.log(add(10,20))
 
-// let add = function(x,y){
-//     return x+y
-// }
+// console.log(newArr)
 
-// console.log(add (10,20))
+let newArr = ranks.map((e, index) => {
+    if(e%2==0)
+    return e
+})
 
-let add =(x,y)=> x+y
-console.log(add(10,20))
+console.log(newArr)
 
-const counter ={
-    count:0,
-    next: function() {
-        return ++(this.count)
-    },
-    key: this.count 
-}
-console.log(counter)
-console.log(counter.count)
-console.log(counter.next)
-console.log(counter.next ())
-console.log(counter.next ())
-console.log(counter.key)
+
+
+
+
 
 
 
