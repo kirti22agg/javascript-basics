@@ -1,44 +1,112 @@
-console.log ("MERGED CLASS 1")
-// array destructuring
+// arrow functions
 
-var arr = [1,2,3,4]
+// function add(x,y){
+    // return x+y
+// }
+// console.log(add(10,20))
 
-var [one,two,three]= arr
-console.log(three)
+// let add = function(x,y){
+//     return x+y
+// }
 
-function getscores() {
-    return [90,100]
+// console.log(add (10,20))
+
+let add =(x,y)=> x+y
+console.log(add(10,20))
+
+const counter ={
+    count:0,
+    next: function() {
+        return ++(this.count)
+    },
+    key: this.count 
 }
+console.log(counter)
+console.log(counter.count)
+console.log(counter.next)
+console.log(counter.next ())
+console.log(counter.next ())
+console.log(counter.key)
 
-let [x,y,z] = getscores()
-console.log(x)
-console.log(y)
-console.log(z)
 
-// object destructuring
 
-const obj={
-    Name: "Kirti Aggarwal",
-    email: "kirti22agg@gmail.com",
-    age: 20
-}
 
-// console.log(obj.email)
 
-let {Name,email,age,num} = obj
-console.log(email)
-console.log(num)
 
-let person ={
-    firstname: "Kirti",
-    lastname: "Aggarwal",
-    age1: 20
 
-}
-let{firstname,lastname,age1,middlename=""}= person
-console.log(firstname)
-console.log(lastname)
-console.log(age1)
-console.log(middlename)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
